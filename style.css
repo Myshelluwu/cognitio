@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* Colors */
+    --blue-color: #0074B4;
+    --green-color: #00b34C;
+    --purple-color: #5B1D99;
+    --yellow-color: #FFD41F;
+    --orange-color: #eb5a2a;
+
+    /* Colors-hover */
+    --blue-color-hover: #005A8A;
+    --green-color-hover: #047e37;
+    --purple-color-hover: #501788;
+    --yellow-color-hover: #ebc21f;
+    --orange-color-hover: #d14e23;
+}
+
+
+/** Fonts --> */
+.montserrat-100 {
+font-family: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-weight: 100;
+font-style: normal;
+}
+
+.montserrat-200 {
+font-family: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-weight: 200;
+font-style: normal;
+}
+
+.montserrat-300 {
+font-family: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-weight: 300;
+font-style: normal;
+}
+
+.montserrat-400 {
+font-family: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+}
+
+.montserrat-500 {
+font-family: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-weight: 500;
+font-style: normal;
+}
+
+.montserrat-600 {
+font-family: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-weight: 600;
+font-style: normal;
+}
+
+.montserrat-700 {
+font-family: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-weight: 700;
+font-style: normal;
+}
+
+.montserrat-800 {
+font-family: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-weight: 800;
+font-style: normal;
+}
+
+.montserrat-900 {
+font-family: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-weight: 900;
+font-style: normal;
+}
+
+
+.poppins-thin {
+font-family: "Poppins", sans-serif;
+font-weight: 100;
+font-style: normal;
+}
+
+.poppins-extralight {
+font-family: "Poppins", sans-serif;
+font-weight: 200;
+font-style: normal;
+}
+
+.poppins-light {
+font-family: "Poppins", sans-serif;
+font-weight: 300;
+font-style: normal;
+}
+
+.poppins-regular {
+font-family: "Poppins", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.poppins-medium {
+font-family: "Poppins", sans-serif;
+font-weight: 500;
+font-style: normal;
+}
+
+.poppins-semibold {
+font-family: "Poppins", sans-serif;
+font-weight: 600;
+font-style: normal;
+}
+
+.poppins-bold {
+font-family: "Poppins", sans-serif;
+font-weight: 700;
+font-style: normal;
+}
+
+.poppins-extrabold {
+font-family: "Poppins", sans-serif;
+font-weight: 800;
+font-style: normal;
+}
+
+.poppins-black {
+font-family: "Poppins", sans-serif;
+font-weight: 900;
+font-style: normal;
+}
+
+.poppins-thin-italic {
+font-family: "Poppins", sans-serif;
+font-weight: 100;
+font-style: italic;
+}
+
+.poppins-extralight-italic {
+font-family: "Poppins", sans-serif;
+font-weight: 200;
+font-style: italic;
+}
+
+.poppins-light-italic {
+font-family: "Poppins", sans-serif;
+font-weight: 300;
+font-style: italic;
+}
+
+.poppins-regular-italic {
+font-family: "Poppins", sans-serif;
+font-weight: 400;
+font-style: italic;
+}
+
+.poppins-medium-italic {
+font-family: "Poppins", sans-serif;
+font-weight: 500;
+font-style: italic;
+}
+
+.poppins-semibold-italic {
+font-family: "Poppins", sans-serif;
+font-weight: 600;
+font-style: italic;
+}
+
+.poppins-bold-italic {
+font-family: "Poppins", sans-serif;
+font-weight: 700;
+font-style: italic;
+}
+
+.poppins-extrabold-italic {
+font-family: "Poppins", sans-serif;
+font-weight: 800;
+font-style: italic;
+}
+
+.poppins-black-italic {
+font-family: "Poppins", sans-serif;
+font-weight: 900;
+font-style: italic;
+}
+
+.parkinsans-300 {
+font-family: "Parkinsans", sans-serif;
+font-optical-sizing: auto;
+font-weight: 300;
+font-style: normal;
+}
+
+.parkinsans-400 {
+font-family: "Parkinsans", sans-serif;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+}
+
+.parkinsans-500 {
+font-family: "Parkinsans", sans-serif;
+font-optical-sizing: auto;
+font-weight: 500;
+font-style: normal;
+}
+
+.parkinsans-600 {
+font-family: "Parkinsans", sans-serif;
+font-optical-sizing: auto;
+font-weight: 600;
+font-style: normal;
+}
+
+.parkinsans-700 {
+font-family: "Parkinsans", sans-serif;
+font-optical-sizing: auto;
+font-weight: 700;
+font-style: normal;
+}
+
+.parkinsans-800 {
+font-family: "Parkinsans", sans-serif;
+font-optical-sizing: auto;
+font-weight: 800;
+font-style: normal;
+}
+
+/** <-- Fonts */
+
+/** Buttons --> */
+
+.btn-green {
+    background-color: var(--green-color);
+    color: #fff; 
+}
+
+.btn-green:hover {
+    background-color: var(--green-color-hover);
+    color: #fff;
+}
+
+.btn-purple {
+    background-color: var(--purple-color);
+    color: #fff; 
+}
+
+.btn-purple:hover {
+    background-color: var(--purple-color-hover);
+    color: #fff;
+}
+
+.btn-orange {
+    background-color: var(--orange-color);
+    color: #fff; 
+}
+
+.btn-orange:hover {
+    background-color: var(--orange-color-hover);
+    color: #fff;
+}
+
+
+/** <-- Buttons */
