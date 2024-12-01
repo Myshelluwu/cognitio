@@ -7,7 +7,9 @@
 :root{
     /* Colors */
     --blue-color: #0074B4;
+    --lightblue-color: #529bc3;
     --green-color: #00b34C;
+    --lightgreen-color: #23d46d;
     --purple-color: #5B1D99;
     --yellow-color: #FFD41F;
     --orange-color: #eb5a2a;
@@ -23,220 +25,167 @@
 
 /** Fonts --> */
 .montserrat-100 {
-font-family: "Montserrat", sans-serif;
-font-optical-sizing: auto;
-font-weight: 100;
-font-style: normal;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
 }
 
 .montserrat-200 {
-font-family: "Montserrat", sans-serif;
-font-optical-sizing: auto;
-font-weight: 200;
-font-style: normal;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
 }
 
 .montserrat-300 {
-font-family: "Montserrat", sans-serif;
-font-optical-sizing: auto;
-font-weight: 300;
-font-style: normal;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .montserrat-400 {
-font-family: "Montserrat", sans-serif;
-font-optical-sizing: auto;
-font-weight: 400;
-font-style: normal;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .montserrat-500 {
-font-family: "Montserrat", sans-serif;
-font-optical-sizing: auto;
-font-weight: 500;
-font-style: normal;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .montserrat-600 {
-font-family: "Montserrat", sans-serif;
-font-optical-sizing: auto;
-font-weight: 600;
-font-style: normal;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .montserrat-700 {
-font-family: "Montserrat", sans-serif;
-font-optical-sizing: auto;
-font-weight: 700;
-font-style: normal;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .montserrat-800 {
-font-family: "Montserrat", sans-serif;
-font-optical-sizing: auto;
-font-weight: 800;
-font-style: normal;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
 }
 
 .montserrat-900 {
-font-family: "Montserrat", sans-serif;
-font-optical-sizing: auto;
-font-weight: 900;
-font-style: normal;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
 }
 
 
-.poppins-thin {
-font-family: "Poppins", sans-serif;
-font-weight: 100;
-font-style: normal;
+.poppins-100 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
 }
 
-.poppins-extralight {
-font-family: "Poppins", sans-serif;
-font-weight: 200;
-font-style: normal;
+.poppins-200 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
 }
 
-.poppins-light {
-font-family: "Poppins", sans-serif;
-font-weight: 300;
-font-style: normal;
+.poppins-300 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
-.poppins-regular {
-font-family: "Poppins", sans-serif;
-font-weight: 400;
-font-style: normal;
+.poppins-400 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.poppins-medium {
-font-family: "Poppins", sans-serif;
-font-weight: 500;
-font-style: normal;
+.poppins-500 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
-.poppins-semibold {
-font-family: "Poppins", sans-serif;
-font-weight: 600;
-font-style: normal;
+.poppins-600 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
-.poppins-bold {
-font-family: "Poppins", sans-serif;
-font-weight: 700;
-font-style: normal;
+.poppins-700 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
-.poppins-extrabold {
-font-family: "Poppins", sans-serif;
-font-weight: 800;
-font-style: normal;
+.poppins-800 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
 }
 
-.poppins-black {
-font-family: "Poppins", sans-serif;
-font-weight: 900;
-font-style: normal;
-}
-
-.poppins-thin-italic {
-font-family: "Poppins", sans-serif;
-font-weight: 100;
-font-style: italic;
-}
-
-.poppins-extralight-italic {
-font-family: "Poppins", sans-serif;
-font-weight: 200;
-font-style: italic;
-}
-
-.poppins-light-italic {
-font-family: "Poppins", sans-serif;
-font-weight: 300;
-font-style: italic;
-}
-
-.poppins-regular-italic {
-font-family: "Poppins", sans-serif;
-font-weight: 400;
-font-style: italic;
-}
-
-.poppins-medium-italic {
-font-family: "Poppins", sans-serif;
-font-weight: 500;
-font-style: italic;
-}
-
-.poppins-semibold-italic {
-font-family: "Poppins", sans-serif;
-font-weight: 600;
-font-style: italic;
-}
-
-.poppins-bold-italic {
-font-family: "Poppins", sans-serif;
-font-weight: 700;
-font-style: italic;
-}
-
-.poppins-extrabold-italic {
-font-family: "Poppins", sans-serif;
-font-weight: 800;
-font-style: italic;
-}
-
-.poppins-black-italic {
-font-family: "Poppins", sans-serif;
-font-weight: 900;
-font-style: italic;
+.poppins-900 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
 }
 
 .parkinsans-300 {
-font-family: "Parkinsans", sans-serif;
-font-optical-sizing: auto;
-font-weight: 300;
-font-style: normal;
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .parkinsans-400 {
-font-family: "Parkinsans", sans-serif;
-font-optical-sizing: auto;
-font-weight: 400;
-font-style: normal;
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .parkinsans-500 {
-font-family: "Parkinsans", sans-serif;
-font-optical-sizing: auto;
-font-weight: 500;
-font-style: normal;
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .parkinsans-600 {
-font-family: "Parkinsans", sans-serif;
-font-optical-sizing: auto;
-font-weight: 600;
-font-style: normal;
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .parkinsans-700 {
-font-family: "Parkinsans", sans-serif;
-font-optical-sizing: auto;
-font-weight: 700;
-font-style: normal;
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .parkinsans-800 {
-font-family: "Parkinsans", sans-serif;
-font-optical-sizing: auto;
-font-weight: 800;
-font-style: normal;
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
 }
 
 /** <-- Fonts */
+
 
 /** Buttons --> */
 
@@ -269,6 +218,103 @@ font-style: normal;
     background-color: var(--orange-color-hover);
     color: #fff;
 }
-
-
 /** <-- Buttons */
+
+
+/** Navigation --> */
+.navbar-custom {
+    background-color: var(--blue-color);
+}
+
+nav a {
+    margin-top: 0.5rem;
+    text-decoration: none;
+}
+
+.nav-color {
+    background-color: var(--blue-color);
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.5 12.5a.5.5 0 0 1 .5-.5h12a.5.5 0 0 1 0 1h-12a.5.5 0 0 1-.5-.5zm0-5a.5.5 0 0 1 .5-.5h12a.5.5 0 0 1 0 1h-12a.5.5 0 0 1-.5-.5zm0-5a.5.5 0 0 1 .5-.5h12a.5.5 0 0 1 0 1h-12a.5.5 0 0 1-.5-.5z'/%3E%3C/svg%3E");
+}
+
+.btn-close {
+    background-color: transparent;
+    border: none;
+    filter: invert(1);
+}
+/** <-- Navigation */
+
+
+/** Hero --> */
+
+.rounded-image {
+    border-radius: 15px;
+}
+
+/** <-- Hero */
+
+/** Servicios -> */
+
+.bg-lightblue {
+    background-color: var(--lightblue-color);
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+}
+
+.radio {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.radio label {
+    margin-left: 5px;
+    margin-right: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.formulario input[type="radio"] {
+    display: none;
+}
+
+.formulario .radio label {
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--white--color);
+    padding: 10px 20px;
+    display: inline-block;
+    position: relative;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3 ease;
+}
+
+.formulario .radio label:hover {
+background: rgba(12, 8, 1, 0.2);
+}
+
+.formulario input[type="radio"]:checked + label {
+background: var(--white--color);
+color: var(--hover-color);
+}
+
+.button-hover {
+background-color: var(--hover-color);
+}
+
+/** <- Servicios */
