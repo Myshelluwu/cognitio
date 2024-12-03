@@ -15,134 +15,182 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
-            <div class="container-sm">
-                <a class="parkinsans-700 text-white h2 mt-2" aria-current="page"
-                    href="#">Cognitio</a>
-    
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-    
-                <div class="offcanvas offcanvas-end nav-color" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h3 class="offcanvas-title parkinsans-600 text-white"
-                            id="offcanvasNavbarLabel">Cognitio</h3>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-    
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link montserrat-600 text-white" aria-current="page" href="#">Menu</a>
-                            </li>
-                            <!-- <li class="nav-item">
-                                <a class="nav-link montserrat-600 text-white" href="#login">Login</a>
-                            </li> -->
-                            <!-- <li class="nav-item">
-                                <a class="nav-link montserrat-600 text-white" href="#register">Register</a>
-                            </li> -->
-                            <li class="nav-item">
-                                <a class="nav-link montserrat-600 text-white" href="#clases">Clases</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link montserrat-600 text-white" href="#tutores">Tutores</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link montserrat-600 text-white" href="#perfil">Perfil</a>
-                            </li>
-                        </ul>
-                    </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+        <div class="container-sm">
+            <a class="parkinsans-700 text-white h2 mt-2" aria-current="page"
+                href="#">Cognitio</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end nav-color" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h3 class="offcanvas-title parkinsans-600 text-white"
+                        id="offcanvasNavbarLabel">Cognitio</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link montserrat-600 text-white" aria-current="page" href="#">Menu</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link montserrat-600 text-white" href="#login">Login</a>
+                        </li> -->
+                        <!-- <li class="nav-item">
+                            <a class="nav-link montserrat-600 text-white" href="#register">Register</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link montserrat-600 text-white" href="#clases">Clases</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link montserrat-600 text-white" href="#tutores">Tutores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link montserrat-600 text-white" href="#perfil">Perfil</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </nav>
+        </div>
+    </nav>
 
-        <!-- Hero Section -->
-        <aside id="inicio" class="mt-5">
-            <div class="container">
-                <div class="row">
-                    <article class="col-lg-5 d-flex flex-column justify-content-center">
-                        <h2 class="parkinsans-700 fs-0 mb-5">Donde el conocimiento se encuentra con la guía perfecta</h2>
-                            <p class="text-opacity poppins-400">Encuentra al tutor ideal para tus necesidades académicas y reserva sesiones en pocos pasos. Cognitio está diseñado para hacer que el aprendizaje sea accesible, flexible y enfocado en tus metas.</p>
-                        <div class="d-flex center ">
-                            <a class="btn btn-green mb-4 poppins-300" href="#register">Regístrate</a>
-                        </div>
-                    </article>
-
-                    <!--Imagenes en carrusel-->
-                    <div class="col-lg-7">
-                        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="img-fluid d-block w-100 rounded-image" alt="imagen1">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="https://images.pexels.com/photos/4050451/pexels-photo-4050451.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="img-fluid d-block w-100 rounded-image" alt="imagen2">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="https://images.pexels.com/photos/3762800/pexels-photo-3762800.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="img-fluid d-block w-100 rounded-image" alt="imagen3">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </aside>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#529bc3" fill-opacity="1" d="M0,288L48,245.3C96,203,192,117,288,106.7C384,96,480,160,576,165.3C672,171,768,117,864,128C960,139,1056,213,1152,213.3C1248,213,1344,139,1392,101.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-
-        <!-- Services -->
-        <main id="servicios" class="bg-lightblue pb-5">
-            <div class="container">
-                <article class="row">
-                    <h2 class="text-white text-center parkinsans-600 fs-1 mb-3">¿Por qué elegir Cognitio?</h2>
-
-                    <!-- Servicios -->
-                    <div class="col-12 d-flex justify-content-center mt-1 mb-4">
-                        <form class="formulario">
-                            <div class="radio text-white">
-                                <input type="radio" name="texto" id="aprendizaje" checked>
-                                <label for="aprendizaje">Aprendizaje personalizado</label>
-
-                                <input type="radio" name="texto" id="gestion">
-                                <label for="gestion">Gestion sencilla</label>
-
-                                <input type="radio" name="texto" id="calidad">
-                                <label for="calidad">Calidad garantizada</label>
-
-                                <input type="radio" name="texto" id="acceso">
-                                <label for="acceso">Acceso seguro</label>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-6">
-                        <img id="servicios-img" class="img-fluid rounded-image w-100" src="https://live.staticflickr.com/65535/53933754297_8a807222b5_c.jpg" alt="Servicio">
-                    </div>
-
-                    <div class="col-6 d-flex flex-column justify-content-around">
-                        <h3 id="servicios-title" class=" text-white montserrat-600 mb-3 fs-1">Cuidado y Rehabilitación Estética Postoperatoria</h3>
-                        <p id="servicios-text" class="text-white poppins-400">Acelera tu recuperación con nuestro tratamiento especializado. Mejoramos la cicatrización y los resultados estéticos tras procedimientos quirúrgicos, ayudándote a recuperar tu bienestar y confianza.</p>
+    <!-- Hero Section -->
+    <aside id="inicio" class="mt-5">
+        <div class="container">
+            <div class="row">
+                <article class="col-lg-5 d-flex flex-column justify-content-center">
+                    <h2 class="parkinsans-700 fs-0 mb-5">Donde el conocimiento se encuentra con la guía perfecta</h2>
+                        <p class="text-opacity poppins-400">Encuentra al tutor ideal para tus necesidades académicas y reserva sesiones en pocos pasos. Cognitio está diseñado para hacer que el aprendizaje sea accesible, flexible y enfocado en tus metas.</p>
+                    <div class="d-flex center ">
+                        <a class="btn btn-green mb-4 poppins-300" href="#register">Regístrate</a>
                     </div>
                 </article>
+
+                <!--Imagenes en carrusel-->
+                <div class="col-lg-7">
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="img-fluid d-block w-100 rounded-image" alt="imagen1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://images.pexels.com/photos/4050451/pexels-photo-4050451.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="img-fluid d-block w-100 rounded-image" alt="imagen2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://images.pexels.com/photos/3762800/pexels-photo-3762800.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="img-fluid d-block w-100 rounded-image" alt="imagen3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
             </div>
-        </main>
+        </div>
+    </aside>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#529bc3" fill-opacity="1" d="M0,288L48,245.3C96,203,192,117,288,106.7C384,96,480,160,576,165.3C672,171,768,117,864,128C960,139,1056,213,1152,213.3C1248,213,1344,139,1392,101.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+
+    <!-- Services -->
+    <main id="servicios" class="bg-lightblue">
+        <div class="container">
+            <article class="row">
+                <h2 class="text-white text-center parkinsans-600 fs-1 mb-3">¿Por qué elegir Cognitio?</h2>
+
+                <!-- Servicios -->
+                <div class="col-12 d-flex justify-content-center mt-1 mb-4">
+                    <form class="formulario">
+                        <div class="radio text-white">
+                            <input type="radio" name="texto" id="aprendizaje" checked>
+                            <label for="aprendizaje">Aprendizaje personalizado</label>
+
+                            <input type="radio" name="texto" id="gestion">
+                            <label for="gestion">Gestion sencilla</label>
+
+                            <input type="radio" name="texto" id="calidad">
+                            <label for="calidad">Calidad garantizada</label>
+
+                            <input type="radio" name="texto" id="acceso">
+                            <label for="acceso">Acceso seguro</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-6">
+                    <img id="servicios-img" class="img-fluid rounded-image w-100" src="https://live.staticflickr.com/65535/53933754297_8a807222b5_c.jpg" alt="Servicio">
+                </div>
+
+                <div class="col-6 d-flex flex-column justify-content-around">
+                    <h3 id="servicios-title" class=" text-white montserrat-600 mb-3 fs-1">Cuidado y Rehabilitación Estética Postoperatoria</h3>
+                    <p id="servicios-text" class="text-white poppins-400">Acelera tu recuperación con nuestro tratamiento especializado. Mejoramos la cicatrización y los resultados estéticos tras procedimientos quirúrgicos, ayudándote a recuperar tu bienestar y confianza.</p>
+                </div>
+            </article>
+        </div>
+    </main>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#529bc3" fill-opacity="1" d="M0,288L40,256C80,224,160,160,240,128C320,96,400,96,480,96C560,96,640,96,720,122.7C800,149,880,203,960,202.7C1040,203,1120,149,1200,117.3C1280,85,1360,75,1400,69.3L1440,64L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
+
+    <!-- Funcionamiento -->
+    <section id="funcionamiento" >
+        <div class="container">
+            <article class="row">
+                <div class="col-6">
+                    <img id="funcionamiento-img" class="img-fluid rounded-image w-100" src="https://live.staticflickr.com/65535/53933754297_8a807222b5_c.jpg" alt="Funcionamiento">
+                </div>
+                <div class="col-6 d-flex flex-column justify-content-around">
+                    <h3 id="funcionamiento-title" class="montserrat-600 mb-3 fs-1">Funcionamiento</h3>
+                    <p id="funcionamiento-text" class="poppins-400">Nuestro equipo de especialistas cuidara tu salud y tu bienestar, ofreciendo un servicio personalizado y confiable.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="mt-5">
+        <div class="overlay text-center">
+            <article class="container">
+                <h2 class="text-white montserrat-700 d-flex justify-content-start mb-3 fs-1">Experiencias de nuestros clientes</h2>
+                <p class="text-white text-opacity d-flex poppins-400 justify-content-start mb-4">Escucha a quienes han experimentado nuestro excepcional cuidado y apoyo.</p>
+
+                <div class="row">
+                    <div class="col-md-4 mt-5 mb-4">
+                        <div class="testimonial-card">
+                            <p class="poppins-500">"Gracias al excelente tratamiento y cuidado recibido, pude recuperar mi movilidad completa después de una cirugía de rodilla. El equipo fue profesional y atento en todo momento. ¡Altamente recomendado!"</p>
+                            <p class="d-flex justify-content-start poppins-500">- María G</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-5 mb-4">
+                        <div class="testimonial-card">
+                            <p class="poppins-500">"Gracias al excelente tratamiento y cuidado recibido, pude recuperar mi movilidad completa después de una cirugía de rodilla. El equipo fue profesional y atento en todo momento. ¡Altamente recomendado!"</p>
+                            <p class="d-flex justify-content-start poppins-500">- María G</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-5 mb-4">
+                        <div class="testimonial-card">
+                            <p class="poppins-500">"Gracias al excelente tratamiento y cuidado recibido, pude recuperar mi movilidad completa después de una cirugía de rodilla. El equipo fue profesional y atento en todo momento. ¡Altamente recomendado!"</p>
+                            <p class="d-flex justify-content-start poppins-500">- María G</p>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+        </div>
+    </section>
 
 
+    <!-- Footer -->
     <footer class="footer mt-5 py-5">
         <div class="container">
             <h6 class="inter-footer text-center">&copy; 2024 Cognitio</h6>
         </div>
     </footer>
     
-
     <!-- scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script
