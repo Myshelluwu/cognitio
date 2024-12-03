@@ -1,46 +1,18 @@
-// Función para mostrar el contenido correspondiente
-function showContent(contentToShow, contentToHide) {
-    document.getElementById(contentToShow).style.display = 'block';
-    document.getElementById(contentToHide).style.display = 'none';
-}
+document.addEventListener("DOMContentLoaded", function () {
+  const estudianteRadio = document.getElementById("info1");
+  const tutorRadio = document.getElementById("info2");
+  const rolInput = document.getElementById("rol");
 
-// Función para inicializar los event listeners
-function init() {
-    document.getElementById('info1').addEventListener('change', function() {
-        showContent('content1', 'content2');
-    });
-
-    document.getElementById('info2').addEventListener('change', function() {
-        showContent('content2', 'content1');
-    });
-}
-
-// Inicializar los event listeners cuando se carga la página
-document.addEventListener('DOMContentLoaded', init);
-
-
-function togglePasswordVisibility() {
-    var passwordField = document.getElementById("contrasena");
-    var toggleButton = document.getElementById("togglePassword");
-
-    if (passwordField.type === "password") {
-        passwordField.type = "text";
-        toggleButton.textContent = "Ocultar";
-    } else {
-        passwordField.type = "password";
-        toggleButton.textContent = "Mostrar";
+  // Actualizar el valor del rol basado en el radio seleccionado
+  estudianteRadio.addEventListener("change", function () {
+    if (this.checked) {
+      rolInput.value = "Estudiante";
     }
-}
+  });
 
-function togglePasswordVisibility2() {
-    var passwordField = document.getElementById("contrasena2");
-    var toggleButton = document.getElementById("togglePassword2");
-
-    if (passwordField.type === "password") {
-        passwordField.type = "text";
-        toggleButton.textContent = "Ocultar";
-    } else {
-        passwordField.type = "password";
-        toggleButton.textContent = "Mostrar";
+  tutorRadio.addEventListener("change", function () {
+    if (this.checked) {
+      rolInput.value = "Tutor";
     }
-}
+  });
+});
