@@ -85,6 +85,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['login'])) {
             </div>
           </div>
     </div>
-    <script src="/AprendeL/public/functions.js"></script>
+    <!--<script src="/AprendeL/public/functions.js"></script> -->
 </body>
 </html>
