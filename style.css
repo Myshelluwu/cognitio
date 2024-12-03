@@ -318,3 +318,95 @@ background-color: var(--hover-color);
 }
 
 /** <- Servicios */
+
+
+
+/** Experiencia -> */
+
+.overlay {
+    position: relative;
+    padding: 50px 0;
+    color: var(--white--color);
+}
+
+.overlay::before {
+    content: "";
+    background-image: url('https://images.pexels.com/photos/5999074/pexels-photo-5999074.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.overlay::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.overlay .container {
+    position: relative;
+    z-index: 3;
+}
+
+.scroll-container {
+    display: flex;
+    max-height: 400px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+}
+
+.scroll-inner {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.testimonial-card {
+    background-color: var(--lightblue-color);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+    min-width: 200px;
+    max-width: 300px;
+    flex: 0 0 auto;
+    display: inline-block;
+}
+
+.custom-carousel .carousel-control-prev,
+.custom-carousel .carousel-control-next {
+width: 5%;
+}
+
+.custom-carousel .carousel-control-prev-icon,
+.custom-carousel .carousel-control-next-icon {
+width: 50px; 
+height: 50px;
+left: -50px; 
+}
+
+.custom-prev {
+left: -5%; 
+}
+
+.custom-next {
+right: -5%;
+}
+
+commentsmobile {
+display: none;
+}
+
+/** <-- Experiencia */
+
