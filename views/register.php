@@ -42,71 +42,7 @@
                                                     value="Tutor">
                                                 <label class="poppins-regular btn" for="info2">Tutor</label>
                                             </div>
-                                            <!--
-                                           
-                                            <form action="../agregar/agregar_estudiante.php" method="POST">
-                                                <section id="content1">
-                                                    <div class="form-group">
-                                                        <input type="text" class="form-control mb-3 poppins-light" name="nombre"
-                                                            placeholder="Nombre" required autofocus>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <input type="text" class="form-control mb-3 poppins-light" name="apellidos"
-                                                            placeholder="Apellidos" required>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <input type="email" class="form-control mb-3 poppins-light" name="correo"
-                                                            placeholder="email@uppenjamo.edu.mx" required>
-                                                    </div>
-                                                    <div class="input-group">
-                                                        <input type="password" class="form-control mb-3 poppins-light"
-                                                            name="contrasena" id="contrasena" placeholder="contraseña"
-                                                            required>
-                                                        <div class="input-group-append">
-                                                            <button type="button" id="togglePassword"
-                                                                class="btn btn-outline-secondary poppins-extralight"
-                                                                onclick="togglePasswordVisibility()">Mostrar</button>
-                                                        </div>
-                                                    </div>
-                                                    
-                                                    <button type="submit" class="btn btn-purple poppins-light"
-                                                        name="ingresar_estudiante">Registrarse</button>
-                                                </section>
-                                            </form>
-
-                                             Agregar profesor php
-                                            <form action="../agregar/agregar_profesor.php" method="POST">
-                                                <section id="content2" style="display: none;" >
-                                                    <div class="form-group">
-                                                        <input type="text" class="form-control mb-3 poppins-light" name="nombre"
-                                                            placeholder="nombre" required utofocus>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <input type="text" class="form-control mb-3 poppins-light" name="apellidos"
-                                                            placeholder="apellidos" required>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <input type="email" class="form-control mb-3 poppins-light" name="correo"
-                                                            placeholder="email@uppenjamo.edu.mx" required>
-                                                    </div>
-                                                    <div class="input-group">
-                                                        <input type="password" class="form-control mb-3 poppins-light" 
-                                                            id="contrasena2" name="contrasena" placeholder="contraseña"
-                                                            required>
-                                                        <div class="input-group-append">
-                                                            <button type="button" id="togglePassword2" class="btn btn-outline-secondary poppins-extralight"
-                                                                onclick="togglePasswordVisibility2()">Mostrar</button>
-                                                        </div>
-                                                    </div>
-
-
-                                                    
-                                                    <button type="submit" class="btn btn-purple poppins-light"
-                                                        name="ingresar_profesor">Registrarse</button>
-                                                </section>
-                                            </form>
-
-                                            -->
+                                          
                                             <form action="../add/agregar_usuario.php" method="POST">
                                                 <section id="content1" style="display: block;">
                                                     <!-- Nombre -->
