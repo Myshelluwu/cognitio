@@ -373,7 +373,8 @@ background-color: var(--hover-color);
 }
 
 .testimonial-card {
-    background-color: var(--lightblue-color);
+    background-color: var(--purple-color);
+    opacity: 0.8;
     color: white;
     padding: 20px;
     border-radius: 10px;
