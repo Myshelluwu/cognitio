@@ -410,3 +410,20 @@ display: none;
 
 /** <-- Experiencia */
 
+
+/** Footer -> */
+
+.icon-ins {
+    background-color: #eb0790;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.icon-ins:hover {
+    background-color: #c70579;
+    color: white;
+}
+
+
+/** <-- Footer */
