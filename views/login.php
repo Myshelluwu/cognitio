@@ -111,7 +111,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['login'])) {
                                                             required>
                                                         <div class="input-group-append">
                                                             <button type="button" id="togglePassword"
-                                                                class="btn btn-outline-secondary"
+                                                                class="btn btn-outline-secondary poppins-200"
                                                                 onclick="togglePasswordVisibility()">Mostrar</button>
                                                         </div>
                                                 </div>
