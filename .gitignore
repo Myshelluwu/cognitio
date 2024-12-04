@@ -1,0 +1,2 @@
+#Ignorar conexion a la base de datos
+/config/dbconn.php 
