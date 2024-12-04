@@ -36,14 +36,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['login'])) {
 }
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log in</title>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -55,6 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['login'])) {
     <!-- Styles -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../style.css">
+    <title>Inicia Sesion</title>
 </head>
 
 <body>
@@ -88,8 +87,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['login'])) {
             </div>
         </div>
     </nav>
-
-    <section class="hero section-login">
+    <!-- Hero Section -->
+    <section class="hero section-login py-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-12 text-center mx-auto">
@@ -101,13 +100,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['login'])) {
                                         <div class="about-info">
                                             
                                             <form action="./login.php" method="POST">
-                                                <h2 class="mt-5 mb-4 text-center">Iniciar Sesion</h2>
+                                                <h2 class="mt-5 mb-4 text-center montserrat-600">Iniciar Sesión</h2>
                                                 <div class="form-group">
-                                                    <input type="email" class="form-control mb-3" name="correo"
+                                                    <input type="email" class="form-control mb-3 poppins-200" name="correo"
                                                         placeholder="Correo electrónico" required>
                                                 </div>
                                                 <div class="input-group">
-                                                        <input type="password" class="form-control mb-3"
+                                                        <input type="password" class="form-control mb-3 poppins-200"
                                                             name="contrasena" id="contrasena" placeholder="Contraseña"
                                                             required>
                                                         <div class="input-group-append">
@@ -117,20 +116,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['login'])) {
                                                         </div>
                                                 </div>
                                                 
-                                                <button type="submit" class="btn btn-dark mx-auto d-block"
+                                                <button type="submit" class="btn btn-purple mx-auto d-block poppins-300"
                                                     name="login">Entrar</button>
 
-                                                <?php
+                                                <!-- <?php
                                                 session_start();
                                             
                                                 if (isset($_SESSION['message'])) {
                                                     echo '<div class="mensaje">' . $_SESSION['message'] . '</div>';
                                                     unset($_SESSION['message']);
                                                 }
-                                                ?>
+                                                ?> -->
                                                 
                                             </form>
-                                            <p class="mt-3">¿No tienes una cuenta? <a href="register.php">Regístrate</a>
+                                            <p class="mt-3 poppins-200">¿No tienes una cuenta? <a href="register.php">Regístrate</a>
                                             </p>
                                         </div>
                                     </div>
@@ -144,7 +143,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['login'])) {
         </div>
     </section>
 
-    <script src="./public/js/bootstrap.js"></script>
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/script.js"></script>
     <script src="../public/funciones.js"></script>
 
 </body>
