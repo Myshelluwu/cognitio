@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nombre = $_POST['nombre'];
     $apellidos = $_POST['apellidos'];
     $correo = $_POST['correo'];
-    $contrasena = password_hash($_POST['contrasena'], PASSWORD_BCRYPT); // Encriptar la contraseña
+    $contrasena = $_POST['contrasena'];
     $rol = $_POST['rol'];
     $fecha_nacimiento = $_POST['fecha_nacimiento'];
 
