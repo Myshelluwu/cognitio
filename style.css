@@ -373,13 +373,12 @@ background-color: var(--hover-color);
 }
 
 .testimonial-card {
-    background-color: var(--lightblue-color);
+    background-color: var(--purple-color);
     color: white;
-    padding: 20px;
     border-radius: 10px;
+    padding: 20px;
     margin-right: 20px;
     min-width: 200px;
-    max-width: 300px;
     flex: 0 0 auto;
     display: inline-block;
 }
@@ -410,3 +409,46 @@ display: none;
 
 /** <-- Experiencia */
 
+
+/** Footer -> */
+
+.icon-ins {
+    background-color: #eb0790;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.icon-ins:hover {
+    background-color: #c70579;
+    color: white;
+}
+
+/** <-- Footer */
+
+/** Inicio de sesion -> */
+
+.section-hero-text {
+    position: relative;
+}
+
+.about-thumb {
+    background: var(--white);
+    border-radius: 20px;
+    margin-bottom: 24px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 20px;}
+/** <-- Inicio de sesion */
+
+/** Registro -> */
+.about-thumb2 {
+    background: var(--white);
+    border-radius: 20px;
+    margin-bottom: 24px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 8px;
+    padding-bottom: 5px;}
+/** <-- Registro */

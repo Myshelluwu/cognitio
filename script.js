@@ -11,9 +11,9 @@ const serviciosData = {
         text: "Simplifica la administración de tus tutorías con herramientas intuitivas. Organiza tu tiempo, perfiles y sesiones fácilmente, asegurando una experiencia fluida y sin complicaciones."
     },
     calidad: {
-    img: "https://images.pexels.com/photos/3184398/pexels-photo-3184398.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load", 
-    title: "Calidad Garantizada en Cada Tutoría",
-    text: "Confía en una plataforma que prioriza la excelencia. Nuestros tutores son evaluados y calificados para garantizarte una experiencia educativa de primer nivel que cumpla con tus expectativas."
+        img: "https://images.pexels.com/photos/3184398/pexels-photo-3184398.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load", 
+        title: "Calidad Garantizada en Cada Tutoría",
+        text: "Confía en una plataforma que prioriza la excelencia. Nuestros tutores son evaluados y calificados para garantizarte una experiencia educativa de primer nivel que cumpla con tus expectativas."
     },
     acceso: {
         img: "https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load", 
