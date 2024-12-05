@@ -106,7 +106,7 @@ $conn = null;
                             <a class="nav-link montserrat-600 text-white" aria-current="page" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link montserrat-600 text-white" href="#servicios">Menú</a>
+                            <a class="nav-link montserrat-600 text-white" href="./menu_estudiante.php">Menú</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link montserrat-600 text-white" href="#funcionamiento">Búsqueda</a>

@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['login'])) {
         $_SESSION['user_contrasena'] = $user['contrasena'];
         $_SESSION['user_rol'] = $user['rol'];
         $_SESSION['user_fecha_nacimiento'] = $user['fecha_nacimiento'];
-        header('Location: profile.php'); 
+        header('Location: menu_estudiante.php'); 
     } else {
 
         $_SESSION['message'] = 'Correo electrónico o contraseña incorrectos';
