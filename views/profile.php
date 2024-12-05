@@ -63,7 +63,6 @@ $conn = null;
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -81,6 +80,7 @@ $conn = null;
     <link rel="stylesheet" href="../style.css">
     <!--Comentario-->
 </head>
+
 
 <body>
     <!-- Navigation -->
@@ -202,7 +202,8 @@ $conn = null;
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <textarea class="form-control" name="descripcion" rows="5"><?= htmlspecialchars($tutorData['descripcion'] ?? '') ?></textarea>
+                        <textarea class="form-control" name="descripcion"
+                            rows="5"><?= htmlspecialchars($tutorData['descripcion'] ?? '') ?></textarea>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -225,8 +226,10 @@ $conn = null;
                     <div class="modal-body">
                         <?php foreach ($niveles as $nivel): ?>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="niveles[]" value="<?= $nivel['id_nivel_academico'] ?>">
-                                <label class="form-check-label"><?= htmlspecialchars($nivel['nombre_nivel_academico']) ?></label>
+                                <input class="form-check-input" type="checkbox" name="niveles[]"
+                                    value="<?= $nivel['id_nivel_academico'] ?>">
+                                <label
+                                    class="form-check-label"><?= htmlspecialchars($nivel['nombre_nivel_academico']) ?></label>
                             </div>
                         <?php endforeach; ?>
                     </div>
@@ -251,7 +254,8 @@ $conn = null;
                     <div class="modal-body">
                         <?php foreach ($materias as $materia): ?>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="materias[]" value="<?= $materia['id_materia'] ?>">
+                                <input class="form-check-input" type="checkbox" name="materias[]"
+                                    value="<?= $materia['id_materia'] ?>">
                                 <label class="form-check-label"><?= htmlspecialchars($materia['nombre_materia']) ?></label>
                             </div>
                         <?php endforeach; ?>
@@ -265,6 +269,48 @@ $conn = null;
         </div>
     </div>
 
+    <!-- Modal Disponibilidad -->
+    <div class="modal fade" id="modalDisponibilidad" tabindex="-1" aria-labelledby="modalDisponibilidadLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form action="../add/agregar_disponibilidad.php" method="POST">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalDisponibilidadLabel">Agregar Disponibilidad</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Días de la semana -->
+                        <h6>Días disponibles</h6>
+                        <?php
+                        $diasSemana = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'];
+                        foreach ($diasSemana as $dia): ?>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="dias_semana[]" value="<?= $dia ?>">
+                                <label class="form-check-label"><?= $dia ?></label>
+                            </div>
+                        <?php endforeach; ?>
+
+                        <!-- Hora de inicio -->
+                        <h6 class="mt-3">Hora de Inicio</h6>
+                        <div class="form-group">
+                            <input type="time" class="form-control" name="hora_inicio" step="3600" required>
+                        </div>
+
+                        <!-- Hora de fin -->
+                        <h6 class="mt-3">Hora de Fin</h6>
+                        <div class="form-group">
+                            <input type="time" class="form-control" name="hora_fin" step="3600" required>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="submit" class="btn btn-green">Guardar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <!-- scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
