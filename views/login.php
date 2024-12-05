@@ -14,27 +14,35 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['login'])) {
     $stmt->execute();
     $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
-
     if ($user && $password === $user['contrasena']) {
-        session_start();
+        // Iniciar sesión
         $_SESSION['user_id'] = $user['id_usuario'];
         $_SESSION['user_nombre'] = $user['nombre'];
         $_SESSION['user_apellidos'] = $user['apellidos'];
         $_SESSION['user_correo'] = $user['correo'];
-        $_SESSION['user_contrasena'] = $user['contrasena'];
         $_SESSION['user_rol'] = $user['rol'];
-        $_SESSION['user_fecha_nacimiento'] = $user['fecha_nacimiento'];
-        header('Location: index.php'); 
-    } else {
 
+        // Redirigir según el rol del usuario
+        if ($user['rol'] === 'estudiante') {
+            header('Location: ./menu_estudiante.php');
+        } elseif ($user['rol'] === 'tutor') {
+            header('Location: ./profile.php');
+        } else {
+            $_SESSION['message'] = 'Rol no reconocido.';
+            header('Location: login.php');
+        }
+        exit();
+    } else {
+        // Mensaje de error en caso de credenciales incorrectas
         $_SESSION['message'] = 'Correo electrónico o contraseña incorrectos';
         header('Location: login.php');
+        exit();
     }
-
 
     $database->close();
 }
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
