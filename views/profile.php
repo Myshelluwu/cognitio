@@ -187,7 +187,6 @@ $conn = null;
             </div>
         </div>
     </div>
-
     
     <!-- Modal Biografía -->
     <div class="modal fade" id="modalBiografia" tabindex="-1" aria-labelledby="modalBiografiaLabel" aria-hidden="true">
