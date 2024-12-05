@@ -103,22 +103,19 @@ $conn = null;
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link montserrat-600 text-white" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link montserrat-600 text-white" aria-current="page" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link montserrat-600 text-white" href="#servicios">Servicios</a>
+                            <a class="nav-link montserrat-600 text-white" href="#servicios">Menú</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link montserrat-600 text-white" href="#funcionamiento">Guía</a>
+                            <a class="nav-link montserrat-600 text-white" href="#funcionamiento">Búsqueda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link montserrat-600 text-white" href="#testimonios">Historias</a>
+                            <a class="nav-link montserrat-600 text-white" href="#testimonios">Perfil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link montserrat-600 text-white" href="./login.php">Inicia Sesión</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link montserrat-600 text-white" href="./register.php">Regístrate</a>
+                            <a class="nav-link montserrat-600 text-white" href="./login.php">Cerrar Sesión</a>
                         </li>
                     </ul>
                 </div>
