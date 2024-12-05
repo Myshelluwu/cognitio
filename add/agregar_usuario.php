@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // Redirigir con mensaje de éxito
             session_start();
             $_SESSION['message'] = "Registro exitoso";
-            header('Location: ../views/register.php');
+            header('Location: ../views/login.php');
             exit();
         } catch (Exception $e) {
             // Revertir transacción si ocurre un error
