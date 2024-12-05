@@ -15,7 +15,7 @@ $conn = (new Connection())->open();
 $tutorId = $_SESSION['user_id'];
 
 // Obtener descripción del tutor
-$sqlTutor = "SELECT descripcion FROM tutores WHERE id_tutor = ?";
+$sqlTutor = "SELECT descripcion, calificacion_promedio FROM tutores WHERE id_tutor = ?";
 $stmtTutor = $conn->prepare($sqlTutor);
 $stmtTutor->execute([$tutorId]);
 $tutorData = $stmtTutor->fetch();
@@ -61,7 +61,6 @@ $disponibilidades = $stmtDisponibilidad->fetchAll(PDO::FETCH_ASSOC);
 // Cerrar conexión
 $conn = null;
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -78,13 +77,21 @@ $conn = null;
             <div class="card-body">
                 <!-- Nombre del Tutor -->
                 <h1 class="card-title text-center mb-4" id="tutor-nombre">
-                    <?= htmlspecialchars($_SESSION['user_nombre']) ?></h1>
+                    <?= htmlspecialchars($_SESSION['user_nombre']) ?>
+                </h1>
+                
+                <!-- Calificación del Tutor -->
+                <h5 class="text-center text-muted">
+                    Calificación: <?= number_format($tutorData['calificacion_promedio'], 1) ?> / 5
+                </h5>
+                <hr>
 
                 <!-- Biografía -->
                 <div class="mb-4">
                     <h4>Biografía</h4>
                     <p id="biografia" class="bg-light p-3 rounded">
-                        <?= htmlspecialchars($tutorData['descripcion'] ?? 'No hay biografía escrita aún.') ?></p>
+                        <?= htmlspecialchars($tutorData['descripcion'] ?? 'No hay biografía escrita aún.') ?>
+                    </p>
                     <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalBiografia">Editar
                         Biografía</button>
                 </div>
@@ -113,6 +120,7 @@ $conn = null;
                         Materias</button>
                 </div>
 
+                <!-- Disponibilidad -->
                 <div class="mb-4">
                     <h4>Disponibilidad</h4>
                     <table class="table table-striped">
@@ -140,134 +148,6 @@ $conn = null;
         </div>
     </div>
     </div>
-
-    <!-- Modal Biografía -->
-    <div class="modal fade" id="modalBiografia" tabindex="-1" aria-labelledby="modalBiografiaLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <form action="../add/agregar_biografia.php" method="POST">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modalBiografiaLabel">Editar Biografía</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <textarea class="form-control" name="descripcion"
-                            rows="5"><?= htmlspecialchars($tutorData['descripcion'] ?? '') ?></textarea>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="submit" class="btn btn-primary">Guardar</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal Niveles Académicos -->
-    <div class="modal fade" id="modalNiveles" tabindex="-1" aria-labelledby="modalNivelesLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <form action="../add/agregar_niveles.php" method="POST">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modalNivelesLabel">Añadir Nivel Académico</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <?php foreach ($niveles as $nivel): ?>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="niveles[]"
-                                    value="<?= $nivel['id_nivel_academico'] ?>">
-                                <label
-                                    class="form-check-label"><?= htmlspecialchars($nivel['nombre_nivel_academico']) ?></label>
-                            </div>
-                        <?php endforeach; ?>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="submit" class="btn btn-primary">Guardar</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal Materias -->
-    <div class="modal fade" id="modalMaterias" tabindex="-1" aria-labelledby="modalMateriasLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <form action="../add/agregar_materias.php" method="POST">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modalMateriasLabel">Añadir Materias</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <?php foreach ($materias as $materia): ?>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="materias[]"
-                                    value="<?= $materia['id_materia'] ?>">
-                                <label class="form-check-label"><?= htmlspecialchars($materia['nombre_materia']) ?></label>
-                            </div>
-                        <?php endforeach; ?>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="submit" class="btn btn-primary">Guardar</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-    <!-- Modal Disponibilidad -->
-    <!-- Modal Disponibilidad -->
-    <div class="modal fade" id="modalDisponibilidad" tabindex="-1" aria-labelledby="modalDisponibilidadLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <form action="../add/agregar_disponibilidad.php" method="POST">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modalDisponibilidadLabel">Agregar Disponibilidad</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <!-- Días de la semana -->
-                        <h6>Días disponibles</h6>
-                        <?php
-                        $diasSemana = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'];
-                        foreach ($diasSemana as $dia): ?>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="dias_semana[]" value="<?= $dia ?>">
-                                <label class="form-check-label"><?= $dia ?></label>
-                            </div>
-                        <?php endforeach; ?>
-
-                        <!-- Hora de inicio -->
-                        <h6 class="mt-3">Hora de Inicio</h6>
-                        <div class="form-group">
-                            <input type="time" class="form-control" name="hora_inicio" step="3600" required>
-                        </div>
-
-                        <!-- Hora de fin -->
-                        <h6 class="mt-3">Hora de Fin</h6>
-                        <div class="form-group">
-                            <input type="time" class="form-control" name="hora_fin" step="3600" required>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="submit" class="btn btn-primary">Guardar</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
