@@ -77,7 +77,7 @@
                                                     <!-- Correo -->
                                                     <div class="form-group">
                                                         <input type="email" class="poppins-200 form-control mb-3 poppins-light"
-                                                            name="correo" placeholder="email@uppenjamo.edu.mx" required>
+                                                            name="correo" placeholder="nombre@email.com" required>
                                                     </div>
                                                     <!-- Fecha de Nacimiento -->
                                                     <div class="form-group">
