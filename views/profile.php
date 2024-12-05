@@ -191,16 +191,91 @@ $conn = null;
         </div>
     </div>
 
-        <!-- scripts -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        <script
-            src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script
-            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script src="../script.js"></script>
-        <script src="../public/funciones.js"></script>
+    
+    <!-- Modal Biografía -->
+    <div class="modal fade" id="modalBiografia" tabindex="-1" aria-labelledby="modalBiografiaLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form action="../add/agregar_biografia.php" method="POST">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalBiografiaLabel">Editar Biografía</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <textarea class="form-control" name="descripcion" rows="5"><?= htmlspecialchars($tutorData['descripcion'] ?? '') ?></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="submit" class="btn btn-primary">Guardar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Niveles Académicos -->
+    <div class="modal fade" id="modalNiveles" tabindex="-1" aria-labelledby="modalNivelesLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form action="../add/agregar_niveles.php" method="POST">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalNivelesLabel">Añadir Nivel Académico</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <?php foreach ($niveles as $nivel): ?>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="niveles[]" value="<?= $nivel['id_nivel_academico'] ?>">
+                                <label class="form-check-label"><?= htmlspecialchars($nivel['nombre_nivel_academico']) ?></label>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="submit" class="btn btn-primary">Guardar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Materias -->
+    <div class="modal fade" id="modalMaterias" tabindex="-1" aria-labelledby="modalMateriasLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form action="../add/agregar_materias.php" method="POST">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalMateriasLabel">Añadir Materias</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <?php foreach ($materias as $materia): ?>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="materias[]" value="<?= $materia['id_materia'] ?>">
+                                <label class="form-check-label"><?= htmlspecialchars($materia['nombre_materia']) ?></label>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="submit" class="btn btn-primary">Guardar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../script.js"></script>
+    <script src="../public/funciones.js"></script>
 </body>
 
 </html>
