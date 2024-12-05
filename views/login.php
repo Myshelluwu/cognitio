@@ -22,7 +22,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['login'])) {
         $_SESSION['user_correo'] = $user['correo'];
         $_SESSION['user_rol'] = $user['rol'];
 
-
         // Redirigir según el rol del usuario
         if ($user['rol'] === 'estudiante') {
             header('Location: ./menu_estudiante.php');
